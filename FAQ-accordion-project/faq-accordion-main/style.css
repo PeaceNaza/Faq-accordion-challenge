@@ -1,0 +1,142 @@
+@import url(https://fonts.google.com/specimen/Work+Sans);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light--pink: hsl(275, 100%, 97%);
+  --Grayish--purple: hsl(292, 16%, 49%);
+  --Dark--purple: hsl(292, 42%, 14%);
+}
+
+body {
+  min-height: 100vh;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Work Sans' sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: url('./assets/images/background-pattern-desktop.svg') no-repeat;
+  background-color: var(--Light--pink);
+  background-position: top;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.accordion-faq {
+  display: block;
+  padding: 40px 0;
+  margin: 8rem auto;
+  color: hsl(292, 42%, 14%);
+  background-color: hsl(0, 0%, 100%);
+  width: 41%;
+  border-radius: 1rem;
+  box-shadow: 0px 30px 100px -50px black;
+}
+
+.faq-heading {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  padding-left: 10px;
+}
+
+.faq-heading h1 {
+  font-weight: 800;
+  font-size: 40px;
+}
+.faq-content {
+  margin-bottom: 0;
+}
+
+.faq-dropdown {
+  margin-left: 10px;
+}
+hr {
+  opacity: 0.2;
+}
+.dropdown-heading {
+  font-size: 25px;
+  font-weight: 700;
+  padding: 18px 10px;
+  margin-bottom: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-heading h4 {
+  font-weight: 600;
+  font-size: 15px;
+  width: 95%;
+  margin-left: 0.5rem;
+}
+
+.heading-icon {
+  border: 0px;
+  width: 30px;
+  height: 30px;
+  background: url(./assets/images/icon-plus.svg);
+  background-size: cover;
+  background-color: inherit;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  transition: 0.3s ease;
+  margin-right: 1rem;
+}
+
+/* called these when writing javasript*/
+.dropdown-paragraph {
+  display: none;
+  margin-bottom: 10px;
+}
+
+.dropdown-paragraph.open {
+  display: block;
+  padding-left: 1rem;
+  color: gray;
+  font-size: small;
+  margin-inline-end: 2rem;
+
+
+}
+
+.heading-icon.open {
+  background: url(./assets/images/icon-minus.svg);
+  transition: 0.3s ease;
+}
+
+/*footer styles*/
+footer {
+  text-align: center;
+  font-size: 15px;
+}
+
+footer a {
+  color: var(--Dark--purple);
+}
+
+@media (max-width: 760px) {
+  body {
+    background: url(./assets/images/background-pattern-mobile.svg) no-repeat;
+    background-size: 100%;
+    min-width: 375px;
+  }
+
+  .accordion-faq {
+    min-width: 400px;
+    margin: auto;
+  }
+}
+
+
+
+
