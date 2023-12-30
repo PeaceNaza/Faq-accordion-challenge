@@ -50,7 +50,8 @@ body {
 
 .faq-heading h1 {
   font-weight: 800;
-  font-size: 40px;
+  font-size: 32px;
+  font-family: sans-serif;
 }
 .faq-content {
   margin-bottom: 0;
@@ -74,7 +75,7 @@ hr {
 .dropdown-heading h4 {
   font-weight: 600;
   font-size: 15px;
-  width: 95%;
+  width: 80%;
   margin-left: 0.5rem;
 }
 
@@ -132,9 +133,17 @@ footer a {
   }
 
   .accordion-faq {
-    min-width: 400px;
-    margin: auto;
+    min-width: 380px;
+    min-height: 350px;
+
+    margin: 30px 2;
   }
+
+  .heading-icon {
+    margin-right: -1px;
+
+  }
+
 }
 
 
