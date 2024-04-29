@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     otherGroups.forEach((otherGroup) => {
       if(otherGroup!== group) {
         const otherGroupBody = otherGroup.querySelector('.dropdown-paragraph');
-        const otherIcon = otherGroup.querySelector('heading-icon');
+        const otherIcon = otherGroup.querySelector('.heading-icon');
         
         otherGroupBody.classList.remove('open');
         otherIcon.classList.remove('open');
